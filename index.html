@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de video</title>
+</head>
+<body>
+    <div class="player">
+        <video id="video" controls src="./src/assets/Akon.mp4"></video>   
+        <div class="player-overlay">
+            <!-- <h2>Name video</h2> -->
+            <div class="play-actions">
+                <button class="button" id="backward" aria-label="avanzar"></button>
+                <button class="button" id="play" aria-label="Reproducir">Play</button>
+                <button class="button" id="pausa" aria-label="Pausar">Pause</button>
+                <button class="button" id="next" aria-label="NextSong">Next</button>
+            </div>
+            <div class="player-progress">
+                <input type="range">
+            </div>
+        </div>
+    </div>
+    <script src="./src/music.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>
